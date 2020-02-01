@@ -20,15 +20,17 @@ public class KaraokeController : Singleton<KaraokeController>
     private float rate = 0;
 
     private bool skip = false;
+    private bool isTalking = false;
 
-    public bool Skip {
-        set {
-            skip = value;
+    public bool IsTalking {
+        get {
+            return isTalking;
         }
     }
 
     public void PlayDialogue(KaraokeProfile karaokeProfile, Dialogue msg)
     {
+        isTalking = true;
         kText.text = msg.GetString(GameManager.Instance.Language);
         kPortrait.sprite = karaokeProfile.Portrait;
         kText.maxVisibleCharacters = 0;
@@ -50,7 +52,13 @@ public class KaraokeController : Singleton<KaraokeController>
             yield return new WaitForSeconds(rate);
         }
 
+        isTalking = false;
         skip = false;
     } 
+
+    public void SendInterruption()
+    {
+        skip = true;
+    }
 
 }
