@@ -3,8 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "KaraokeActorPreset", menuName = "KaraokeActorPreset")]
-public class KaraokeActorPreset : ScriptableObject
+[CreateAssetMenu(fileName = "KaraokeProfile", menuName = "KaraokeProfile")]
+public class KaraokeProfile : ScriptableObject
 {
     [SerializeField]
     private Sprite portrait;
