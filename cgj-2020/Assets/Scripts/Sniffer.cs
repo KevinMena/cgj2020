@@ -10,9 +10,9 @@ public class Sniffer : MonoBehaviour
 
     public LayerMask layerMask;
 
-    private bool currentSniff;
+    private bool currentSniff = false;
 
-    private bool lastSniff;
+    private bool lastSniff = false;
 
     void Awake() 
     {
