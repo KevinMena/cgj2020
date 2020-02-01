@@ -1,0 +1,80 @@
+- Visuales:
+
+ + Mapa
+  General
+  Alcantarilla
+
+ + Unidades
+  Fritz: con Death Ray, con Water Gun
+         frente, atrás, izquierda, derecha
+  Niño Cafetera
+  Tostadora (normal, explota)
+  Licuadora
+  Tocadiscos
+  Aspiradora
+  Robot fantasma: frente, atrás, izquierda, derecha
+  NPC 1
+  NPC 2
+  NPC 3
+
+ + Escenario
+  Tren de Fritz
+  Árboles secos
+  Tumbas de robots
+  Museo destruido
+  Tapa de alcantarilla
+  Edificios/Chatarra/
+
+ + Gadgets
+  Death Ray
+  Water Gun
+
+ + Items
+  Semilla
+  Flor
+  Lata de frutas
+  Cuchillo
+  Pala
+  Esponja
+  Bobina de Tesla
+  Piedra
+
+ + Escenas
+  Fritz dentro del tren al principio
+  Fritz final feliz
+  Fritz final triste
+
+ + Botones
+  Play
+  Quit
+  Credits
+  Back
+  Resume
+  Main Menu
+
+Auditivos:
+
+Música de fondo
+
++ Unidades
+  Fritz
+  Voz: feliz, triste, confundido
+  Sonidos: Idle, rodando, dispara death ray, dispara agua
+
+  Licuadora
+  Voz: feliz, triste
+
+  Aspiradora
+  Voz: feliz, triste
+
+  Tostadora
+  Voz: feliz, triste
+
+  Tocadiscos
+  Voz: feliz, triste
+
+  Niño Cafetera
+  Voz: feliz
+
+  NPC random
+  Voz: feliz

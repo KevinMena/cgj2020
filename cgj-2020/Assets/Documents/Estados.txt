@@ -1,0 +1,16 @@
+Main Menu
++ Botón Play -A Juego
++ Botón Credits -A Credits
++ Botón Quit
+
+Credits
++ Botón Back -A Main Menu
+
+Juego
++ Teclas AWSD -Mueven al robot principal
++ Tecla ESC -A Menú Pausa
+
+Menú Pausa
++ Botón Resume -Volver a Juego
++ Botón Main Menu -A Main Menu
++ Botón Quit
