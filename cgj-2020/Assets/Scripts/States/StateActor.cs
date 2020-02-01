@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class StateActor : MonoBehaviour
+[System.Serializable]
+public class StateActor
 {
     public int stateCode;
 
@@ -10,5 +12,5 @@ public class StateActor : MonoBehaviour
 
     public Dialogue stateDialogue;
 
-    public bool die;
+    UnityEvent stateEvent;
 }

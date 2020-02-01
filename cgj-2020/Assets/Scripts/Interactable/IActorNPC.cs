@@ -10,6 +10,24 @@ public class IActorNPC : Interactable
 
     public List<StateActor> posibleStates;
 
+    public bool isMoving;
+
+    public Queue<Transform> waypoints = new Queue<Transform>();
+
+    private Transform currentWaypoint;
+
+    void Start() {
+        currentWaypoint = waypoints.Dequeue();
+    }
+
+    void Update() 
+    {
+        if(isMoving)
+        {
+            Patrolling();
+        }
+    }
+
     public override IEnumerator InteractWith() 
     {
         StartDialogue();
@@ -35,6 +53,17 @@ public class IActorNPC : Interactable
                     return;
                 }
             }
+        }
+    }
+
+    public void Patrolling()
+    {
+        transform.Translate(currentWaypoint.position, Space.World);
+
+        if(transform.position.Equals(currentWaypoint.position))
+        {
+            waypoints.Enqueue(currentWaypoint);
+            currentWaypoint = waypoints.Dequeue();
         }
     }
 }
