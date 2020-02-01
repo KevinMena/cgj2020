@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40b94c5825a9b8b449670db117370373, type: 3}
-  m_Name: Seed
+  m_Name: WaterGun
   m_EditorClassIdentifier: 
-  itemName: Seed
-  itemDescription: Nut-like prelude to a flower.
+  itemName: Water Gun
+  itemDescription: Weapon that squirts some water. To water plants and junk.
   itemImage: {fileID: 0}

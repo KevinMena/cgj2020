@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40b94c5825a9b8b449670db117370373, type: 3}
-  m_Name: Seed
+  m_Name: Shovel
   m_EditorClassIdentifier: 
-  itemName: Seed
-  itemDescription: Nut-like prelude to a flower.
+  itemName: Shovel
+  itemDescription: Instrument used to displace dirt.
   itemImage: {fileID: 0}
