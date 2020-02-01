@@ -1,6 +1,7 @@
 - Visuales:
 
  + Mapa
+  Atlas
   Terreno Tierra
   //Terreno Chatarra 1
   //Terreno Chatarra 2
@@ -14,6 +15,7 @@
   Cliff de Roca
 
  + Unidades
+  Atlas
   Fritz: con Death Ray, con Water Gun
          frente, atrás, izquierda, derecha
   Niño Cafetera
