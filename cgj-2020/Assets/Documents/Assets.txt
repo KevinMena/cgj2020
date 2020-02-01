@@ -16,12 +16,12 @@
 
  + Unidades
   Atlas
-  Fritz: con Death Ray, con Water Gun
+X  Fritz: con Death Ray, con Water Gun
          frente, atrás, izquierda, derecha
   Niño Cafetera
 X  Tostadora (normal, explota)
 X  Licuadora
-  Tocadiscos
+X  Tocadiscos
 X  Aspiradora
   Robot fantasma: frente, atrás, izquierda, derecha
   NPC 1
@@ -36,6 +36,8 @@ X  Aspiradora
   Tapa de alcantarilla
   Laboratorio
   Edificios/Chatarra/
+  Poste de luz
+  Flare
 
  + Gadgets
   Death Ray
