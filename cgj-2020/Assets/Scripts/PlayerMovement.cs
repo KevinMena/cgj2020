@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] Vector3 direction;
 
+    public Vector3 lastDirection;
+
     [SerializeField] float horizontal;
 
     [SerializeField] float vertical;
@@ -23,22 +25,16 @@ public class PlayerMovement : MonoBehaviour
     public void Move(Vector3 directionTWO) 
     {
         direction = directionTWO;
+        if(!direction.Equals(Vector3.zero))
+        {
+            lastDirection = direction;
+        }
         rb2d.MovePosition(transform.position + direction * speed * Time.fixedDeltaTime);
+        ShootDirectionRay(lastDirection);
     }
     
     private void ShootDirectionRay(Vector3 directionToLook) 
     {
         Debug.DrawRay(transform.position, directionToLook, Color.red);
-
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, directionToLook, RAYCAST_LENGTH);
-
-        if(hit.collider != null) 
-        {
-            if(hit.transform.tag.Equals("Item"))
-            {
-                Debug.Log("Am hitting");
-                StartCoroutine(hit.transform.GetComponent<ItemGO>().InteractWith());
-            }
-        }
     }
 }

@@ -1,0 +1,98 @@
+~ Reconstru-Bot ~
+
+El ambiente es un pueblo post-apocalíptico art-deco
+
+El robot protagonista es una neverita llamada Fritz que vive en un tren destartalado lleno de cosas
+
+Los demás robots son todos electrodomésticos
+
+DIÁLOGOS DE NPCs
+I am unimportant, and that is fine
+I love living in the apocalypse
+Do a barrel roll!
+
+Al inicio, Fritz sale de su tren con seis cosas:
++ Lata de frutas: Cylindrical container of smoothie ingredients
++ Esponja: Implement intended to remove humidity
++ Cuchillo: Sharp tool that can cut open a full bag
++ Pala: Instrument used to displace dirt
++ Semilla: Nut-like prelude to a flower
+  Flor: Beautiful aftermath of watering a seed
++ Bobina de Tesla: Electric thing that is probably useless
++ Piedra: The kind of thing a dumb kid would like
+
+Los gadgets que puedes encontrar:
++ Death Ray: Weapon that dissipates obstructions
++ Water Gun: Weapon that squirts some water. To water plants and junk
+
+Las pistas que puedes encontrar:
++ Árboles secos: These trees seem fruitless
++ Robot fantasma: This is a robot's ghost. Follow it!
++ Pinturas de flores: This is a painting of a flower. Not better than the real thing
++ Tapa de alcantarilla: The sewers, where broken things go
++ Agua en alcantarilla: Water, the natural enemy of toasters
+
+FRITZ
+I am Reconstru-bot! I will repair my four broken friends with my sweet items, and I am not delusional!
+
+Al salir de su tren, Fritz se encuentra a un Niño Cafetera. Este es el tutorial. El juego indicará la piedra en el inventory, y no permitirá que el jugador se equivoque
+
+NIÑO CAFETERA
+(recibiendo a Fritz)
+Hi, Fritz! You know what would really make my day? Give me a rock!
+(cuando Fritz le da la piedra)
+Awesome! Most people don't say what they really want. Most don't even know!
+
+Los cuatro robots dañados son una Licuadora, una Aspiradora, un Tocadiscos, y una Tostadora.
+
+La Licuadora vive en medio de un bosque seco. Para llegar a ella, Fritz debe encontrar el Death Ray para abrirse paso entre los árboles. Lo que quiere es la lata de frutas
+
+LICUADORA
+(Cuando recibe las frutas)
+Fritz, is that... is that fruit? Real fruit that can be made into a smoothie? Also known as my entire purpose? You have allowed me to live my essence!
+
+(Cuando no recibe las frutas)
+Fritz, I do not understand why you gave me this. But I will blend it heartlessly.
+
+La Aspiradora vive en un cementerio. Su bolsa está llena de tierra. Para llegar a ella, Fritz debe seguir a un robot fantasma, que va y vuelve del cementerio. Lo que quiere es el cuchillo o la pala
+
+ASPIRADORA
+(cuando recibe el cuchillo)
+I guess I worked too hard, right Fritz? Haha. You're right, I'll cut my bag open. I hate this job anyways.
+
+(cuando recibe la pala)
+Good thinking, Fritz! Haha, I'll literally dig myself out of an early grave!
+
+(cuando recibe lo que no es)
+Haha, I get it! It's a prank gift! The prank is I suck dirt until I die! Haha!
+
+El Tocadiscos vive en un museo destruido, con pinturas de flores. Para llegar a él, Fritz sólo debe ir al museo, que está bastante visible en el pueblo. Lo que El Tocadiscos quiere es la flor: Se obtiene encontrando la Water Gun y usándola para regar la semilla
+
+TOCADISCOS
+(cuando recibe la flor)
+Why, do my eyes tell lies or is this ritzy thing a real flower? I thought it was made up! You have shown me a miracle, Fritz the fridge-man!
+
+(cuando recibe la semilla)
+It's a swell thing, this strange pebble. I have the oddest idea that this is somehow related to flowers. If they weren't ficticious, that is!
+
+(cuando recibe otra cosa)
+This sure is a confusing treasure, Fritz-man. I don't quite get the gist, but then again I never understood these paintings.
+
+La Tostadora vive en la alcantarilla, sumergida en agua. Para llegar a ella, debes descubrir la alcantarilla en el pueblo, y bajar por ella. Lo que quiere es la esponja
+
+TOSTADORA
+(Cuando recibe la esponja)
+This soft thing, it can dry me! I don't have to die! I don't have to kill! Fritz, you care about me!
+
+(Cuando no recibe la esponja)
+Thank you for visiting my electric death trap, Fritz. And thank you for giving me this. I guess I could try to use it as a...
+(La Tostadora explota)
+
+A todo lo que dicen los personajes, Fritz responde "I am Reconstru-Bot!"
+
+
+Si Fritz no le da a todos los robots lo que necesitan, el juego termina con Fritz volviendo a su tren, solo.
+
+Si Fritz le da a todos los robots lo que necesitan, el juego termina con Fritz y los robots teniendo una fiesta en el tren. Fuera, el pueblo está lleno de flores.
+
+FIN

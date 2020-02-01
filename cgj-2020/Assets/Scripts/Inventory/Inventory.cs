@@ -2,11 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Inventory : MonoBehaviour
+public class Inventory : MonoBehaviour
 {
     [SerializeField] protected List<Item> inventoryList = new List<Item>();
 
-    public abstract void AddItem(Item itemToAdd);
+    [SerializeField] Item module;
+
+    [SerializeField] const int NUMBER_SLOTS = 6;
+
+    void Start() {
+        ResetInventory();
+    }
+
+    public void ResetInventory() {
+        inventoryList.Clear();
+    }
+
+    public void AddItem(Item itemToAdd)
+    {
+        if(inventoryList.Count < NUMBER_SLOTS) 
+        {
+            inventoryList.Add(itemToAdd);
+            return;
+        } 
+        else
+        {
+            Debug.Log("Inventory Full");
+            return;
+        }
+    }
 
     public void RemoveItem(Item itemToRemove) 
     {

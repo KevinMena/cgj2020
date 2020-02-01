@@ -1,0 +1,92 @@
+- Visuales:
+
+ + Mapa
+  Atlas
+  Terreno Tierra
+  //Terreno Chatarra 1
+  //Terreno Chatarra 2
+  Terreno Bosque
+  Terreno Pueblo
+  Terreno Carretera
+  Terreno Agua
+  Terreno Acera
+  Cliff Pared de Alcantarilla
+  Cliff Bosque
+  Cliff de Roca
+
+ + Unidades
+  Atlas
+  Fritz: con Death Ray, con Water Gun
+         frente, atrás, izquierda, derecha
+  Niño Cafetera
+X  Tostadora (normal, explota)
+X  Licuadora
+  Tocadiscos
+X  Aspiradora
+  Robot fantasma: frente, atrás, izquierda, derecha
+  NPC 1
+  NPC 2
+  NPC 3
+
+ + Escenario
+  Tren de Fritz
+  X Árboles secos
+  Tumbas de robots
+  Museo destruido
+  Tapa de alcantarilla
+  Laboratorio
+  Edificios/Chatarra/
+
+ + Gadgets
+  Death Ray
+  Water Gun
+
+ + Items
+  Semilla
+  Flor
+  Lata de frutas
+  Cuchillo
+  Pala
+  Esponja
+  Bobina de Tesla
+  Piedra
+
+ + Escenas
+  Fritz dentro del tren al principio
+  Fritz final feliz
+  Fritz final triste
+
+ + Botones
+  Play
+  Quit
+  Credits
+  Back
+  Resume
+  Main Menu
+
+Auditivos:
+
+Música de fondo
+
++ Unidades
+  Fritz
+  X Voz: feliz, triste, confundido
+  X Sonidos: Idle, rodando, dispara death ray, dispara agua
+
+  X Licuadora
+  X Voz: feliz, triste
+
+  X Aspiradora
+  X Voz: feliz, triste
+
+  X Tostadora
+  X Voz: feliz, triste
+
+  X Tocadiscos
+  X Voz: feliz, triste
+
+  X Niño Cafetera
+  X Voz: feliz
+
+  X NPC random
+  X Voz: feliz
