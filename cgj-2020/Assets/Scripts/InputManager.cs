@@ -18,7 +18,8 @@ public class InputManager : MonoBehaviour
             if (KaraokeController.Instance.IsTalking)
                 KaraokeController.Instance.SendInterruption();
             else
-            {
+            {   
+                Debug.Log("Sniffing");
                 sniffer.Sniff();
             }
 

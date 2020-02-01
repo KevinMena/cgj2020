@@ -8,8 +8,9 @@ public class IBasic : Interactable
 
     public KaraokeProfile profile;
 
-    public override void InteractWith() 
+    public override IEnumerator InteractWith() 
     {
         KaraokeController.Instance.PlayDialogue(profile, description);
+        yield return null;
     }
 }

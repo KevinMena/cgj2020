@@ -8,10 +8,11 @@ public class IItem : IBasic
 
     public Item itemAttach;
 
-    public override void InteractWith()
+    public override IEnumerator InteractWith()
     {
-        base.InteractWith();
-
+        StartCoroutine(base.InteractWith());
+        yield return new WaitWhile(()=>KaraokeController.Instance.IsTalking);
+        Debug.Log("Adding to inventory");
         AddToInventory();
     }
 

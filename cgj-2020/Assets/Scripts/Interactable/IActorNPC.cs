@@ -10,9 +10,10 @@ public class IActorNPC : Interactable
 
     public List<StateActor> posibleStates;
 
-    public override void InteractWith() 
+    public override IEnumerator InteractWith() 
     {
         StartDialogue();
+        yield return null;
     }
 
     private void StartDialogue() {
