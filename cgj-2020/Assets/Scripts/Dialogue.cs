@@ -7,16 +7,16 @@ using UnityEngine;
 public class Dialogue : ScriptableObject
 {
     [SerializeField]
-    KaraokeProfile karaokeProfile;
+    KaraokeProfile karaokeProfile = null;
 
     [SerializeField]
-    private string[] text;
+    private string[] text = null;
 
     [SerializeField]
-    private float rate;
+    private float rate = 1;
 
     [SerializeField]
-    private int charPerRate;
+    private int charPerRate = 1;
 
     public float Rate {
         get {

@@ -303,6 +303,7 @@ GameObject:
   - component: {fileID: 420128755}
   - component: {fileID: 420128754}
   - component: {fileID: 420128759}
+  - component: {fileID: 420128760}
   m_Layer: 5
   m_Name: KaraokeCanvas
   m_TagString: Untagged
@@ -325,6 +326,7 @@ MonoBehaviour:
   kPortrait: {fileID: 604976635}
   kText: {fileID: 1725758552}
   kAudioS: {fileID: 1214614915}
+  animator: {fileID: 0}
 --- !u!114 &420128755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,7 +356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -419,7 +421,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 11400000, guid: 9d356a3def633894b819ffb3d5079f19, type: 2}
-  karaokeProfile: {fileID: 11400000, guid: c4f12210b708a6d408dd84eecb3a4b3e, type: 2}
+--- !u!95 &420128760
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420128753}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cbe6db03a5f686e45984b19702ea1ed9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &604976633
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,7 +994,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 17
+  m_fontSize: 28.1
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1020,7 +1040,7 @@ MonoBehaviour:
     spaceCount: 0
     wordCount: 1
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0

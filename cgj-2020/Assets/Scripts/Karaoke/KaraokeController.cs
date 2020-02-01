@@ -25,6 +25,8 @@ public class KaraokeController : Singleton<KaraokeController>
 
     private Dialogue[] cDialogues = null;
 
+    private KaraokeProfile lastKaraokeProfile = null;
+
     public bool IsTalking {
         get {
             return isTalking;
@@ -33,20 +35,24 @@ public class KaraokeController : Singleton<KaraokeController>
 
     public void PlayDialogues(Dialogue msg)
     {
-        PlayDialogues(new Dialogue[0] {msg});
+        PlayDialogues(new Dialogue[] {msg});
     }
 
     public void PlayDialogues(Dialogue[] msgs)
     {
         isTalking = true;
         cDialogues = msgs;
-        
+        animator.SetTrigger("Show");
         StartCoroutine(ExecuteDialog());
     }
 
     private void SetProfile(KaraokeProfile kp)
     {
-        
+        if (kp != lastKaraokeProfile)
+        {
+            kPortrait.sprite = kp.Portrait;
+            animator.SetTrigger("ShowPortrait");
+        }
     }
     private IEnumerator ExecuteDialog()
     {
@@ -54,7 +60,7 @@ public class KaraokeController : Singleton<KaraokeController>
 
         for (int i = 0; i < cDialogues.Length; i++)
         {
-            kText.text = msgs[i].GetString(lngCode);
+            kText.text = cDialogues[i].GetString(lngCode);
             int msgLength = kText.text.Length;   
             kText.maxVisibleCharacters = 0;    
             
@@ -62,6 +68,7 @@ public class KaraokeController : Singleton<KaraokeController>
             SetProfile(cDialogues[i].KaraokeProfile);
             int j = 0;
             isDone = false;
+            kAudioS.PlayOneShot(cDialogues[i].KaraokeProfile.Voice);
 
             while (j < msgLength)
             {
@@ -83,13 +90,12 @@ public class KaraokeController : Singleton<KaraokeController>
 
                 j = kText.maxVisibleCharacters;
                 
-                kAudioS.PlayOneShot(audioClip);
                 yield return new WaitForSeconds(cDialogues[i].Rate);
             }
 
             skip = false;
 
-            yield return new WaitUntil(isDone);
+            yield return new WaitUntil(()=>isDone);
             
             isDone = true;
         }
@@ -98,6 +104,8 @@ public class KaraokeController : Singleton<KaraokeController>
     private void EndDialogue()
     {
         isTalking = false;
+        lastKaraokeProfile = null;
+        animator.SetTrigger("HideAll");
     }
 
     public void SendInterruption()

@@ -6,9 +6,11 @@ public class HotbarController : Singleton<HotbarController>
 {
     [SerializeField] Slot[] slots = null;
 
-    public Slots[] Slots {
+    public Slot[] Slots {
         get {
             return slots;
         }
     }
+
+    
 }

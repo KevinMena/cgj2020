@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Slot : MonoBehaviour
 {
-    [SerialiazeField] Image sImage = null;
+    [SerializeField] Image sImage = null;
     private Item myItem = null;
 
     public Item Item {
