@@ -1846,6 +1846,8 @@ GameObject:
   - component: {fileID: 1711333142}
   - component: {fileID: 1711333138}
   - component: {fileID: 1711333140}
+  - component: {fileID: 1711333145}
+  - component: {fileID: 1711333144}
   m_Layer: 0
   m_Name: Neverita
   m_TagString: Untagged
@@ -1994,6 +1996,32 @@ MonoBehaviour:
   horizontal: 0
   vertical: 0
   speed: 5
+--- !u!114 &1711333144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711333137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f769d36ea977434c89cbb028d3b9595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sniffer: {fileID: 1711333145}
+  playerMovement: {fileID: 1711333143}
+--- !u!114 &1711333145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711333137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21b7c74c3981dd54cbb158b52ac2f471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1718844935
 GameObject:
   m_ObjectHideFlags: 0
