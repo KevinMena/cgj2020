@@ -27,9 +27,17 @@ public class KaraokeController : Singleton<KaraokeController>
 
     private KaraokeProfile lastKaraokeProfile = null;
 
+    private IActorNPC talkinINPC = null; 
+
     public bool IsTalking {
         get {
             return isTalking;
+        }
+    }
+
+    public IActorNPC IActorNPC {
+        set {
+            talkinINPC = value;
         }
     }
 

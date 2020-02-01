@@ -326,7 +326,7 @@ MonoBehaviour:
   kPortrait: {fileID: 604976635}
   kText: {fileID: 1725758552}
   kAudioS: {fileID: 1214614915}
-  animator: {fileID: 0}
+  animator: {fileID: 420128760}
 --- !u!114 &420128755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -361,7 +361,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -994,7 +994,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 28.1
+  m_fontSize: 26.15
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
