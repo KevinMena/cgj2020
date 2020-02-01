@@ -2,30 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inventory : MonoBehaviour
+public abstract class Inventory : MonoBehaviour
 {
-    [SerializeField] Item module;
+    [SerializeField] protected List<Item> inventoryList = new List<Item>();
 
-    [SerializeField] const int NUMBER_SLOTS = 6; 
+    public abstract void AddItem(Item itemToAdd);
 
-    [SerializeField] List<Item> inventoryList = new List<Item>();
-
-    public void AddItem(Item itemToAdd)
-    {   
-        if(inventoryList.Count < NUMBER_SLOTS) 
-        {
-            inventoryList.Add(itemToAdd);
-            return;
-        } 
-        else
-        {
-            Debug.Log("Inventory Full");
-            return;
-        }
+    public void RemoveItem(Item itemToRemove) 
+    {
+        inventoryList.Remove(itemToRemove);
     }
 
-    public Item GetRequestedItem(int requestedItem) 
+    public Item GetRequestedItem(string requestedItem) 
     {
-        
+        Item itemFound = inventoryList.Find(item => item.itemName.Equals(requestedItem));
+        return itemFound;
     }
 }

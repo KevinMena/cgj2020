@@ -2,22 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryManager : MonoBehaviour
+public class InventoryManager : Singleton<InventoryManager>
 {
+    public GameObject player;
+
     [SerializeField] List<Item> database = new List<Item>();
 
-    public void AddItem(Item itemToAdd)
+    public void AddItem(int itemToAdd)
     {   
-        if(inventoryList.Count < NUMBER_SLOTS) 
-        {
-            inventoryList.Add(itemToAdd);
-            return;
-        } 
-        else
-        {
-            Debug.Log("Inventory Full");
-            return;
-        }
+        player.GetComponent<Inventory>().AddItem(GetRequestedItem(itemToAdd));
+    }
+
+    public void RemoveItem(int itemToRemove)
+    {
+        player.GetComponent<Inventory>().RemoveItem(GetRequestedItem(itemToRemove));
     }
 
     public Item GetRequestedItem(int requestedItem) 
