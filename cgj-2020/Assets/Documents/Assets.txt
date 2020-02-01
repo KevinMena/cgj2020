@@ -2,12 +2,13 @@
 
  + Mapa
   Terreno Tierra
-  Terreno Chatarra 1
-  Terreno Chatarra 2
+  //Terreno Chatarra 1
+  //Terreno Chatarra 2
   Terreno Bosque
   Terreno Pueblo
   Terreno Carretera
   Terreno Agua
+  Terreno Acera
   Cliff Pared de Alcantarilla
   Cliff Bosque
   Cliff de Roca
