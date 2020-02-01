@@ -4,14 +4,22 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+    [SerializeField] protected List<Item> inventoryList = new List<Item>();
+
     [SerializeField] Item module;
 
-    [SerializeField] const int NUMBER_SLOTS = 6; 
+    [SerializeField] const int NUMBER_SLOTS = 6;
 
-    [SerializeField] List<Item> inventoryList = new List<Item>();
+    void Start() {
+        ResetInventory();
+    }
+
+    public void ResetInventory() {
+        inventoryList.Clear();
+    }
 
     public void AddItem(Item itemToAdd)
-    {   
+    {
         if(inventoryList.Count < NUMBER_SLOTS) 
         {
             inventoryList.Add(itemToAdd);
@@ -24,14 +32,14 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public Item GetRequestedItem(int requestedItem) 
+    public void RemoveItem(Item itemToRemove) 
     {
-        // Lambda to find the object with the requested name
-        Item itemFound = inventoryList.Find(item => item.itemCode == requestedItem);
-        if(itemFound.itemCode != -1) {
-            return itemFound;
-        }
+        inventoryList.Remove(itemToRemove);
+    }
 
-        return null;
+    public Item GetRequestedItem(string requestedItem) 
+    {
+        Item itemFound = inventoryList.Find(item => item.itemName.Equals(requestedItem));
+        return itemFound;
     }
 }
