@@ -15,13 +15,13 @@
   Cliff de Roca
 
  + Unidades
-  Atlas
-  Fritz: con Death Ray, con Water Gun
+X  Atlas
+X  Fritz: con Death Ray, con Water Gun
          frente, atrás, izquierda, derecha
   Niño Cafetera
 X  Tostadora (normal, explota)
 X  Licuadora
-  Tocadiscos
+X  Tocadiscos
 X  Aspiradora
   Robot fantasma: frente, atrás, izquierda, derecha
   NPC 1
@@ -30,12 +30,14 @@ X  Aspiradora
 
  + Escenario
   Tren de Fritz
-  X Árboles secos
+X  Árboles secos
   Tumbas de robots
   Museo destruido
   Tapa de alcantarilla
   Laboratorio
   Edificios/Chatarra/
+  Poste de luz
+  Flare
 
  + Gadgets
   Death Ray
@@ -57,12 +59,12 @@ X  Aspiradora
   Fritz final triste
 
  + Botones
-  Play
-  Quit
-  Credits
-  Back
-  Resume
-  Main Menu
+X  Play
+X  Quit
+X  Credits
+X  Back
+X  Resume
+X  Main Menu
 
 Auditivos:
 
