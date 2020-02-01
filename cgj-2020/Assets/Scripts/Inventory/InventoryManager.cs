@@ -2,17 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryManager : MonoBehaviour
+public class InventoryManager : Singleton<InventoryManager>
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public GameObject player;
+
+    [SerializeField] List<Item> database = new List<Item>();
+
+    public void AddItem(int itemToAdd)
+    {   
+        player.GetComponent<Inventory>().AddItem(GetRequestedItem(itemToAdd));
     }
 
-    // Update is called once per frame
-    void Update()
+    public void RemoveItem(int itemToRemove)
     {
-        
+        player.GetComponent<Inventory>().RemoveItem(GetRequestedItem(itemToRemove));
+    }
+
+    public Item GetRequestedItem(int requestedItem) 
+    {
+        return database[requestedItem];
     }
 }

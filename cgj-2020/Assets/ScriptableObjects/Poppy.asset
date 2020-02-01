@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b94c5825a9b8b449670db117370373, type: 3}
   m_Name: Poppy
   m_EditorClassIdentifier: 
-  itemCode: 0
   itemName: Poppy
   itemDescription: ' A beautiful flower.'
   owner: {fileID: 0}
-  itemImage: {fileID: 0}
+  itemImage: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
