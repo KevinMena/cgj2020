@@ -1,8 +1,16 @@
 - Visuales:
 
  + Mapa
-  General
-  Alcantarilla
+  Terreno Tierra
+  Terreno Chatarra 1
+  Terreno Chatarra 2
+  Terreno Bosque
+  Terreno Pueblo
+  Terreno Carretera
+  Terreno Agua
+  Cliff Pared de Alcantarilla
+  Cliff Bosque
+  Cliff de Roca
 
  + Unidades
   Fritz: con Death Ray, con Water Gun
@@ -19,10 +27,11 @@
 
  + Escenario
   Tren de Fritz
-  Árboles secos
+  X Árboles secos
   Tumbas de robots
   Museo destruido
   Tapa de alcantarilla
+  Laboratorio
   Edificios/Chatarra/
 
  + Gadgets

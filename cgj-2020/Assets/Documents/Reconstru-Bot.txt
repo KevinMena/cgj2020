@@ -8,7 +8,7 @@ Los demás robots son todos electrodomésticos
 
 DIÁLOGOS DE NPCs
 I am unimportant, and that is fine
-I love living in the apocalypse!
+I love living in the apocalypse
 Do a barrel roll!
 
 Al inicio, Fritz sale de su tren con seis cosas:
@@ -30,12 +30,12 @@ Las pistas que puedes encontrar:
 + Robot fantasma: This is a robot's ghost. Follow it!
 + Pinturas de flores: This is a painting of a flower. Not better than the real thing
 + Tapa de alcantarilla: The sewers, where broken things go
-+ Agua: Water, the natural enemy of toasters
++ Agua en alcantarilla: Water, the natural enemy of toasters
 
 FRITZ
 I am Reconstru-bot! I will repair my four broken friends with my sweet items, and I am not delusional!
 
-Al salir de su tren, Fritz se encuentra a un Niño Cafetera. Este es el tutorial. El juego indicará la piedra en el inventory
+Al salir de su tren, Fritz se encuentra a un Niño Cafetera. Este es el tutorial. El juego indicará la piedra en el inventory, y no permitirá que el jugador se equivoque
 
 NIÑO CAFETERA
 (recibiendo a Fritz)
