@@ -7,10 +7,10 @@ using UnityEngine;
 public class KaraokeProfile : ScriptableObject
 {
     [SerializeField]
-    private Sprite portrait;
+    private Sprite portrait = null;
     
     [SerializeField]
-    private AudioClip voice;
+    private AudioClip voice = null;
     
     public Sprite Portrait {
         get {

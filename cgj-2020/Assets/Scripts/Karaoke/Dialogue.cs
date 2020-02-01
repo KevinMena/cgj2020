@@ -7,13 +7,13 @@ using UnityEngine;
 public class Dialogue : ScriptableObject
 {
     [SerializeField]
-    private string[] text;
+    private string[] text = new string[0];
 
     [SerializeField]
-    private float rate;
+    private float rate = 1;
 
     [SerializeField]
-    private int charPerRate;
+    private int charPerRate = 1;
 
     public float Rate {
         get {

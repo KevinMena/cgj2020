@@ -8,16 +8,13 @@ public class KaraokeController : Singleton<KaraokeController>
 {
     
     [SerializeField]
-    private Image kPortrait;
+    private Image kPortrait = null;
 
     [SerializeField]
-    private TMP_Text kText;
+    private TMP_Text kText = null;
 
     [SerializeField]
-    private AudioSource kAudioS;
-
-    private CanvasRenderer textCR;
-    private float rate = 0;
+    private AudioSource kAudioS = null;
 
     private bool skip = false;
     private bool isTalking = false;

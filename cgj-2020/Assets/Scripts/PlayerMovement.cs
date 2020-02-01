@@ -20,27 +20,9 @@ public class PlayerMovement : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    public void Move(Vector3 directionTWO) 
     {
-        horizontal = 0f;
-        vertical = 0f;
-
-        if(Input.GetAxisRaw("Horizontal") != 0) 
-        {
-            horizontal = Input.GetAxisRaw("Horizontal");
-            vertical = 0f;
-        } 
-        else if(Input.GetAxisRaw("Vertical") != 0)
-        {
-            vertical = Input.GetAxisRaw("Vertical");
-            horizontal = 0f;
-        }
-
-        direction = new Vector3(horizontal, vertical, 0);
-    }
-
-    void FixedUpdate() 
-    {
+        direction = directionTWO;
         rb2d.MovePosition(transform.position + direction * speed * Time.fixedDeltaTime);
     }
     

@@ -6,14 +6,8 @@ public class Sniffer : MonoBehaviour
 {
     [SerializeField] const int RAYCAST_LENGTH = 2;
 
-    void Start()
+    public void Sniff()
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
