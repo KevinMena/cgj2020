@@ -1,18 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
-public class KaraokeController : MonoBehaviour
+public class KaraokeController : Singleton<KaraokeController>
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField]
+    private Image kPortrait;
+
+    //[SerializeField]
+    //private Text kText;
+
+    
 }
