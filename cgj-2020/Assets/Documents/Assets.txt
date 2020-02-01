@@ -19,10 +19,10 @@
   Fritz: con Death Ray, con Water Gun
          frente, atrás, izquierda, derecha
   Niño Cafetera
-  Tostadora (normal, explota)
-  Licuadora
+X  Tostadora (normal, explota)
+X  Licuadora
   Tocadiscos
-  Aspiradora
+X  Aspiradora
   Robot fantasma: frente, atrás, izquierda, derecha
   NPC 1
   NPC 2
@@ -70,23 +70,23 @@ Música de fondo
 
 + Unidades
   Fritz
-  Voz: feliz, triste, confundido
-  Sonidos: Idle, rodando, dispara death ray, dispara agua
+  X Voz: feliz, triste, confundido
+  X Sonidos: Idle, rodando, dispara death ray, dispara agua
 
-  Licuadora
-  Voz: feliz, triste
+  X Licuadora
+  X Voz: feliz, triste
 
-  Aspiradora
-  Voz: feliz, triste
+  X Aspiradora
+  X Voz: feliz, triste
 
-  Tostadora
-  Voz: feliz, triste
+  X Tostadora
+  X Voz: feliz, triste
 
-  Tocadiscos
-  Voz: feliz, triste
+  X Tocadiscos
+  X Voz: feliz, triste
 
-  Niño Cafetera
-  Voz: feliz
+  X Niño Cafetera
+  X Voz: feliz
 
-  NPC random
-  Voz: feliz
+  X NPC random
+  X Voz: feliz
