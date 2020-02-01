@@ -6,11 +6,9 @@ public class IBasic : Interactable
 {
     public Dialogue description;
 
-    public KaraokeProfile profile;
-
     public override IEnumerator InteractWith() 
     {
-        KaraokeController.Instance.PlayDialogue(profile, description);
+        KaraokeController.Instance.PlayDialogues(description);
         yield return null;
     }
 }

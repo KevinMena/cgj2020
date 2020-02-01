@@ -16,8 +16,16 @@ public class KaraokeController : Singleton<KaraokeController>
     [SerializeField]
     private AudioSource kAudioS = null;
 
+    [SerializeField]
+    private Animator animator = null;
+
     private bool skip = false;
     private bool isTalking = false;
+    private bool isDone = false;
+
+    private Dialogue[] cDialogues = null;
+
+    private KaraokeProfile lastKaraokeProfile = null;
 
     public bool IsTalking {
         get {
@@ -25,37 +33,87 @@ public class KaraokeController : Singleton<KaraokeController>
         }
     }
 
-    public void PlayDialogue(KaraokeProfile karaokeProfile, Dialogue msg)
+    public void PlayDialogues(Dialogue msg)
     {
-        isTalking = true;
-        kText.text = msg.GetString(GameManager.Instance.Language);
-        kPortrait.sprite = karaokeProfile.Portrait;
-        kText.maxVisibleCharacters = 0;
-        StartCoroutine(ExecuteDialog(msg.Rate, msg.CharPerRate, karaokeProfile.Voice));
+        PlayDialogues(new Dialogue[] {msg});
     }
 
-    private IEnumerator ExecuteDialog (float rate, int charPerRate, AudioClip audioClip)
+    public void PlayDialogues(Dialogue[] msgs)
     {
-        int msgLength = kText.text.Length;
-        
-        for (int i = 0; i < msgLength; i++)
-        {
-            if (skip)
-                kText.maxVisibleCharacters = msgLength;
-            else
-                kText.maxVisibleCharacters += charPerRate;
-            
-            kAudioS.PlayOneShot(audioClip);
-            yield return new WaitForSeconds(rate);
-        }
+        isTalking = true;
+        cDialogues = msgs;
+        animator.SetTrigger("Show");
+        StartCoroutine(ExecuteDialog());
+    }
 
-        isTalking = false;
-        skip = false;
+    private void SetProfile(KaraokeProfile kp)
+    {
+        if (kp != lastKaraokeProfile)
+        {
+            kPortrait.sprite = kp.Portrait;
+            animator.SetTrigger("ShowPortrait");
+        }
+    }
+    private IEnumerator ExecuteDialog()
+    {
+        int lngCode = GameManager.Instance.Language;
+
+        for (int i = 0; i < cDialogues.Length; i++)
+        {
+            kText.text = cDialogues[i].GetString(lngCode);
+            int msgLength = kText.text.Length;   
+            kText.maxVisibleCharacters = 0;    
+            
+            AudioClip voice = cDialogues[i].KaraokeProfile.Voice;
+            SetProfile(cDialogues[i].KaraokeProfile);
+            int j = 0;
+            isDone = false;
+            kAudioS.PlayOneShot(cDialogues[i].KaraokeProfile.Voice);
+
+            while (j < msgLength)
+            {
+                if (skip)
+                {
+                    kText.maxVisibleCharacters = msgLength;
+                }
+                else
+                {
+                    if (kText.maxVisibleCharacters + cDialogues[i].CharPerRate < msgLength)
+                    {
+                        kText.maxVisibleCharacters += cDialogues[i].CharPerRate;
+                    }
+                    else
+                    {
+                        kText.maxVisibleCharacters = msgLength;
+                    }
+                }
+
+                j = kText.maxVisibleCharacters;
+                
+                yield return new WaitForSeconds(cDialogues[i].Rate);
+            }
+
+            skip = false;
+
+            yield return new WaitUntil(()=>isDone);
+            
+            isDone = true;
+        }
     } 
+
+    private void EndDialogue()
+    {
+        isTalking = false;
+        lastKaraokeProfile = null;
+        animator.SetTrigger("HideAll");
+    }
 
     public void SendInterruption()
     {
-        skip = true;
+        if (isDone)
+            EndDialogue();
+        else
+            skip = true;
     }
 
 }

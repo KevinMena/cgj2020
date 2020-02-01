@@ -7,7 +7,10 @@ using UnityEngine;
 public class Dialogue : ScriptableObject
 {
     [SerializeField]
-    private string[] text = new string[0];
+    KaraokeProfile karaokeProfile = null;
+
+    [SerializeField]
+    private string[] text = null;
 
     [SerializeField]
     private float rate = 1;
@@ -24,6 +27,12 @@ public class Dialogue : ScriptableObject
     public int CharPerRate {
         get {
             return charPerRate;
+        }
+    }
+
+    public KaraokeProfile KaraokeProfile {
+        get {
+            return karaokeProfile;
         }
     }
 
