@@ -1,18 +1,26 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KaraokeActorPreset 
+[CreateAssetMenu(fileName = "KaraokeActorPreset", menuName = "KaraokeActorPreset")]
+public class KaraokeActorPreset : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    [SerializeField]
+    private Sprite portrait;
+    
+    [SerializeField]
+    private AudioClip voice;
+    
+    public Sprite Portrait {
+        get {
+            return portrait;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public AudioClip Voice {
+        get {
+            return voice;
+        }
     }
 }
