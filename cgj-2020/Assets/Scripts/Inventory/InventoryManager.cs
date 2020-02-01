@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    [SerializeField] List<Item> database = new List<Item>();
+
+    public void AddItem(Item itemToAdd)
+    {   
+        if(inventoryList.Count < NUMBER_SLOTS) 
+        {
+            inventoryList.Add(itemToAdd);
+            return;
+        } 
+        else
+        {
+            Debug.Log("Inventory Full");
+            return;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public Item GetRequestedItem(int requestedItem) 
     {
-        
+        return database[requestedItem];
     }
 }

@@ -26,12 +26,6 @@ public class Inventory : MonoBehaviour
 
     public Item GetRequestedItem(int requestedItem) 
     {
-        // Lambda to find the object with the requested name
-        Item itemFound = inventoryList.Find(item => item.itemCode == requestedItem);
-        if(itemFound.itemCode != -1) {
-            return itemFound;
-        }
-
-        return null;
+        
     }
 }
