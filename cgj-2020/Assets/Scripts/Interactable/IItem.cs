@@ -2,18 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemGO : MonoBehaviour
+public class IItem : IBasic
 {
-    public Item itemAttach;
-
     public int itemCode;
 
-    public IEnumerator InteractWith() {
-        //Show description
+    public Item itemAttach;
+
+    public override void InteractWith()
+    {
+        base.InteractWith();
 
         AddToInventory();
-
-        yield return null;
     }
 
     private void AddToInventory() {
