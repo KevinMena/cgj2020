@@ -8,7 +8,5 @@ public class Item : ScriptableObject
     [TextArea(4, 8)]
     public string itemDescription = "New description";
 
-    public GameObject owner;
-
     public Sprite itemImage;
 }
