@@ -20,11 +20,11 @@ public class HotbarController : Singleton<HotbarController>
 
     public void AddItem(Item item)
     {
-        for (int i = 0; i < length; i++)
+        for (int i = 0; i < nSlots; i++)
         {
             if (slots[i].isEmpty)
             {
-                slots[i].AddItem(item);
+                slots[i].Item = item;
             }
         }
     }

@@ -13,7 +13,10 @@ public class Inventory : MonoBehaviour
     [SerializeField] const int NUMBER_SLOTS = 6;
 
     void Start() {
-        ResetInventory();
+        for (int i = 0; i < inventoryList.Count; i++)
+        {
+            HotbarController.Instance.AddItem(inventoryList[i]); 
+        }
     }
 
     public void ResetInventory() {
@@ -38,6 +41,7 @@ public class Inventory : MonoBehaviour
     public void RemoveItem(Item itemToRemove) 
     {
         inventoryList.Remove(itemToRemove);
+        HotbarController.Instance.RemoveItem(itemToRemove);
     }
 
     public Item GetRequestedItem(string requestedItem) 

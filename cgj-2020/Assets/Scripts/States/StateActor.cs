@@ -12,7 +12,7 @@ public class StateActor
 
     public Dialogue stateDialogue;
 
-    [SerializeField] UnityEvent stateEvent;
+    [SerializeField] UnityEvent stateEvent = null;
 
     public UnityEvent StateEvent {
         get {

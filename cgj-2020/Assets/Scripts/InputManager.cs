@@ -30,7 +30,7 @@ public class InputManager : MonoBehaviour
                 else
                 {
                     KaraokeController.Instance.IActorNPC.SendGift(InventoryManager.Instance.GetCode(i));
-                    HotbarController.Instance.RemoveItem(i);
+                    GameManager.Instance.Inventory.RemoveItem(i);
                 }
             }
             else

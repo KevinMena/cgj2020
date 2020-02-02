@@ -5,13 +5,20 @@ using System;
 public class GameManager : Singleton <GameManager>
 {
     public GameObject[] actors;
-    [SerializeField] int[] states;
+    [SerializeField] Inventory inventory = null;
+    [SerializeField] int[] states = null;
 
     private int language = 0;
 
     public int Language {
         get {
             return language;
+        }
+    }
+
+    public Inventory Inventory {
+        get {
+            return inventory;
         }
     }
 
