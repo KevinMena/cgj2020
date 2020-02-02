@@ -5,12 +5,12 @@ X  Atlas
 X  Terreno Tierra
   //Terreno Chatarra 1
   //Terreno Chatarra 2
-  Terreno Bosque
+X  Terreno Bosque
 X  Terreno Grama
 X  Terreno Carretera
-  Terreno Agua
+X  Terreno Agua
 X  Terreno Acera
-  Cliff Pared de Alcantarilla
+X  Cliff Pared de Alcantarilla
   Cliff Bosque
   Cliff de Roca
 
@@ -33,9 +33,9 @@ X  Tren de Fritz
 X  Árboles secos
   Tumbas de robots
   Museo destruido
-  Tapa de alcantarilla
-  Laboratorio
-  Edificios/Chatarra/
+X  Tapa de alcantarilla
+X  Laboratorio
+X  Edificios
   Poste de luz
   Flare
 
