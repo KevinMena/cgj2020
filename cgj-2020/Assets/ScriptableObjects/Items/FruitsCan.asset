@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Fruits Can
   itemDescription: Cylindrical container of smoothie ingredients.
-  itemImage: {fileID: 0}
+  itemImage: {fileID: -451994447267456242, guid: 92909b85172f14e4caefe203b3b804f7,
+    type: 3}

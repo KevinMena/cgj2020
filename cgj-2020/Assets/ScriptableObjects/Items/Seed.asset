@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Seed
   itemDescription: Nut-like prelude to a flower.
-  itemImage: {fileID: 0}
+  itemImage: {fileID: -8425969705912198418, guid: 92909b85172f14e4caefe203b3b804f7,
+    type: 3}

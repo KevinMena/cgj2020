@@ -16,4 +16,5 @@ MonoBehaviour:
   itemDescription: 'Beautiful aftermath of watering a seed.
 
 '
-  itemImage: {fileID: 0}
+  itemImage: {fileID: -1264874015923193138, guid: 92909b85172f14e4caefe203b3b804f7,
+    type: 3}

@@ -12,6 +12,13 @@ public class Inventory : MonoBehaviour
 
     [SerializeField] const int NUMBER_SLOTS = 6;
 
+    public bool IsFull
+    {
+        get  {
+            return inventoryList.Count >= NUMBER_SLOTS;
+        }
+    }
+
     void Start() {
         for (int i = 0; i < inventoryList.Count; i++)
         {

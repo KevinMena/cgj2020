@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 442afb8e21e8dbf4ebf45a128d50b88f, type: 3}
   m_Name: ItemDescription
   m_EditorClassIdentifier: 
-  portrait: {fileID: -1699923271235865474, guid: badb807108808ab4fa85b15f4d289d8f,
+  portrait: {fileID: 2404612766452154711, guid: badb807108808ab4fa85b15f4d289d8f,
     type: 3}
   voice: {fileID: 8300000, guid: 4af67a29188d49a48bfcdfc661ec6451, type: 3}

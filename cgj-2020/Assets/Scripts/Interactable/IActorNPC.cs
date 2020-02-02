@@ -20,6 +20,13 @@ public class IActorNPC : Interactable
 
     private Transform currentWaypoint;
 
+    private Animator anim;
+
+    void Awake() 
+    {
+        anim = GetComponent<Animator>();
+    }
+
     void Start() {
         for(int i = 0; i < waypointsArray.Length; i++)
         {
@@ -76,7 +83,8 @@ public class IActorNPC : Interactable
         Vector3 direction = currentWaypoint.position - this.transform.position;
         direction = direction.normalized;
         transform.Translate(direction * npcSpeed * Time.deltaTime, Space.World);
-
+        anim.SetFloat("moveX", direction.x);
+        anim.SetFloat("moveY", direction.y);
         float distance = Vector3.Distance(this.transform.position, currentWaypoint.position);
         if(distance < 0.1f)
         {

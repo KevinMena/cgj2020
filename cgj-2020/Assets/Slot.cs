@@ -50,10 +50,11 @@ public class Slot : MonoBehaviour
         HotbarController.Instance.selected = null;
     }
 
-    void OnMouseOver()
+    void OnMouseEnter()
     {
-        HotbarController.Instance.selected = transform.gameObject;
+        HotbarController.Instance.selected = this;
         TooltipManager.Instance.Show(myItem);
+        Debug.Log(HotbarController.Instance.selected.Item);
     }
 
 } 

@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Shovel
   itemDescription: Instrument used to displace dirt.
-  itemImage: {fileID: 0}
+  itemImage: {fileID: 3785456721277894399, guid: 92909b85172f14e4caefe203b3b804f7,
+    type: 3}

@@ -12,9 +12,16 @@ public class IItem : IBasic
     {
         StartCoroutine(base.InteractWith());
         yield return new WaitWhile(()=>KaraokeController.Instance.IsTalking);
-        Debug.Log("Adding to inventory");
-        AddToInventory();
-        transform.gameObject.SetActive(false);
+        if(!GameManager.Instance.Inventory.IsFull)
+        {
+            Debug.Log("Adding to inventory");
+            AddToInventory();
+            transform.gameObject.SetActive(false);
+        }
+        else
+        {
+            GameManager.Instance.ExecuteDialogue();
+        }
     }
 
     private void AddToInventory() {

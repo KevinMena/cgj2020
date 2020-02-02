@@ -8,6 +8,8 @@ public class GameManager : Singleton <GameManager>
     [SerializeField] Inventory inventory = null;
     [SerializeField] int[] states = null;
 
+    [SerializeField] Dialogue fullDialogue;
+
     private int language = 0;
 
     public int Language {
@@ -20,6 +22,11 @@ public class GameManager : Singleton <GameManager>
         get {
             return inventory;
         }
+    }
+
+    public void ExecuteDialogue()
+    {
+        KaraokeController.Instance.PlayDialogues(fullDialogue);
     }
 
     public void UpdateState(IActorNPC actorToUpdate, int newState)

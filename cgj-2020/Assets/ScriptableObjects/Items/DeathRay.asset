@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Death Ray
   itemDescription: Weapon that dissipates obstructions.
-  itemImage: {fileID: 0}
+  itemImage: {fileID: -3635393659150620445, guid: 92909b85172f14e4caefe203b3b804f7,
+    type: 3}

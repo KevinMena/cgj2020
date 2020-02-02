@@ -23,7 +23,11 @@ public class InputManager : MonoBehaviour
         {
             if (KaraokeController.Instance.IsTalking)
             {
-                Item i = HotbarController.Instance.IsItemSelected();
+                Item i = null;
+                if(HotbarController.Instance.selected != null)
+                {
+                    i = HotbarController.Instance.selected.Item;
+                }
 
                 if (i == null)
                     KaraokeController.Instance.SendInterruption();

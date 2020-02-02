@@ -69,7 +69,7 @@ public class KaraokeController : Singleton<KaraokeController>
     {
         if (kp != lastKaraokeProfile)
         {   
-            if (kp == null)
+            if (kp != null)
             {
                 animator.SetTrigger("HidePortrait");
                 yield return new WaitForSeconds(.5f);
@@ -123,7 +123,8 @@ public class KaraokeController : Singleton<KaraokeController>
     } 
 
     private void EndDialogue()
-    {
+    {   
+        Debug.Log("Ending Dialogue");
         isTalking = false;
         lastKaraokeProfile = null;
 

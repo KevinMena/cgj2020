@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Water Gun
   itemDescription: Weapon that squirts some water. To water plants and junk.
-  itemImage: {fileID: 0}
+  itemImage: {fileID: -3127501667322755903, guid: 92909b85172f14e4caefe203b3b804f7,
+    type: 3}
