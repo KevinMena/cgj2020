@@ -16,7 +16,14 @@ public class InputManager : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             if (KaraokeController.Instance.IsTalking)
-                KaraokeController.Instance.SendInterruption();
+            {
+                Item i = HotbarController.Instance.IsItemSelected();
+
+                if (i == null)
+                    KaraokeController.Instance.SendInterruption();
+                else
+                    KaraokeController.Instance.IActorNPC.SendGift(InventoryManager.Instance.GetCode(i));
+            }
             else
             {   
                 Debug.Log("Sniffing");

@@ -19,4 +19,17 @@ public class Slot : MonoBehaviour
         }
     }
 
+    public bool isEmpty {
+        get {
+            return null == myItem;
+        }
+    }
+
+    public bool IsSelected()
+    {
+        if (sImage.Raycast(Input.mousePosition, Camera.main))
+            return true;
+
+        return false;
+    }
 } 

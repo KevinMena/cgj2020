@@ -46,6 +46,10 @@ public class KaraokeController : Singleton<KaraokeController>
         set {
             talkinNPC = value;
         }
+
+        get {
+            return talkinNPC;
+        }
     }
 
     public void PlayDialogues(Dialogue msg)
@@ -126,6 +130,8 @@ public class KaraokeController : Singleton<KaraokeController>
         if (isMoving)
             talkinNPC.isMoving = true;
 
+
+        talkinNPC = null;
         isMoving = false;
         animator.SetTrigger("HidePortrait");
         animator.SetTrigger("Hide");
