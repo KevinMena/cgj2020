@@ -54,10 +54,15 @@ public class KaraokeController : Singleton<KaraokeController>
         StartCoroutine(ExecuteDialog());
     }
 
-    private void SetPortrait(KaraokeProfile kp)
+    private IEnumerator SetPortrait(KaraokeProfile kp)
     {
         if (kp != lastKaraokeProfile)
-        {
+        {   
+            if (kp == null)
+            {
+                animator.SetTrigger("HidePortrait");
+                yield return new WaitForSeconds(.5f);
+            }
             kPortrait.sprite = kp.Portrait;
             animator.SetTrigger("ShowPortrait");
         }
@@ -73,7 +78,7 @@ public class KaraokeController : Singleton<KaraokeController>
             kText.maxVisibleCharacters = 0;    
             
             AudioClip voice = cDialogues[i].KaraokeProfile.Voice;
-            SetPortrait(cDialogues[i].KaraokeProfile);
+            StartCoroutine(SetPortrait(cDialogues[i].KaraokeProfile));
             int j = 0;
             isDone = false;
             kAudioS.PlayOneShot(cDialogues[i].KaraokeProfile.Voice);
@@ -113,7 +118,9 @@ public class KaraokeController : Singleton<KaraokeController>
     {
         isTalking = false;
         lastKaraokeProfile = null;
-        animator.SetTrigger("HideAll");
+        animator.SetTrigger("HidePortrait");
+        animator.SetTrigger("Hide");
+
     }
 
     public void SendInterruption()

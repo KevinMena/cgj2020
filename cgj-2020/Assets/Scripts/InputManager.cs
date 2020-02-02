@@ -13,7 +13,7 @@ public class InputManager : MonoBehaviour
 
         // EF STUFF
 
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
             if (KaraokeController.Instance.IsTalking)
                 KaraokeController.Instance.SendInterruption();
