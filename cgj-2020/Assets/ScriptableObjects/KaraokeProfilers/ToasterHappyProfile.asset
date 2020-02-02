@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f475116f46836d848baedd671e36b7f1, type: 3}
-  m_Name: Kid.1
+  m_Script: {fileID: 11500000, guid: 442afb8e21e8dbf4ebf45a128d50b88f, type: 3}
+  m_Name: ToasterHappyProfile
   m_EditorClassIdentifier: 
-  karaokeProfile: {fileID: 11400000, guid: 7ef1143b01a42ee4eb3a2d3eb4540455, type: 2}
-  text:
-  - Hi, Fritz! You know what would really make my day? Give me a rock!
-  rate: 0.05
-  charPerRate: 2
+  portrait: {fileID: 7394193166548134865, guid: badb807108808ab4fa85b15f4d289d8f,
+    type: 3}
+  voice: {fileID: 8300000, guid: 63e66de6ee4f71b4f8f6c7fa0e944534, type: 3}

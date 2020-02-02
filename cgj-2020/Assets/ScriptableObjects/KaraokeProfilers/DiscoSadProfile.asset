@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc5e2378dd8ce6e4d999caf4a5e34ba2, type: 3}
-  m_Name: VaccumCleaner.3
+  m_Script: {fileID: 11500000, guid: 442afb8e21e8dbf4ebf45a128d50b88f, type: 3}
+  m_Name: DiscoSadProfile
   m_EditorClassIdentifier: 
-  text:
-  - Haha, I get it! It's a prank gift! The prank is I suck dirt until I die! Haha!
-  rate: 0.7
-  charPerRate: 1
+  portrait: {fileID: 4128122479311955642, guid: badb807108808ab4fa85b15f4d289d8f,
+    type: 3}
+  voice: {fileID: 8300000, guid: 0d17a7e7627660940bf5a6c16059189b, type: 3}

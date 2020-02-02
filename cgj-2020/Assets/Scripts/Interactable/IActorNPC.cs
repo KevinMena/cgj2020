@@ -4,19 +4,27 @@ using UnityEngine;
 
 public class IActorNPC : Interactable
 {
-    public List<Dialogue> dialoguesList = new List<Dialogue>();
+    public Dialogue[] dialoguesList;
 
     public StateActor currentState;
 
     public List<StateActor> posibleStates;
 
     public bool isMoving;
+    
+    public Transform[] waypointsArray = null;
 
-    public Queue<Transform> waypoints = new Queue<Transform>();
+    public float npcSpeed = 2f;
+
+    private Queue<Transform> waypoints = new Queue<Transform>();
 
     private Transform currentWaypoint;
 
     void Start() {
+        for(int i = 0; i < waypointsArray.Length; i++)
+        {
+            waypoints.Enqueue(waypointsArray[i]);
+        }
         currentWaypoint = waypoints.Dequeue();
     }
 
@@ -30,12 +38,9 @@ public class IActorNPC : Interactable
 
     public override IEnumerator InteractWith() 
     {
-        StartDialogue();
+        isMoving = false;
+        KaraokeController.Instance.PlayDialogues(dialoguesList);
         yield return null;
-    }
-
-    private void StartDialogue() {
-        // TO DO
     }
 
     public void SendGift(int gift) {
@@ -58,7 +63,7 @@ public class IActorNPC : Interactable
 
     public void Patrolling()
     {
-        transform.Translate(currentWaypoint.position, Space.World);
+        transform.Translate(currentWaypoint.position * npcSpeed * Time.deltaTime, Space.World);
 
         if(transform.position.Equals(currentWaypoint.position))
         {

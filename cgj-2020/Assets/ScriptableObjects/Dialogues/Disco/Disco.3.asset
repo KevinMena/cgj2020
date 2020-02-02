@@ -9,11 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc5e2378dd8ce6e4d999caf4a5e34ba2, type: 3}
+  m_Script: {fileID: 11500000, guid: f475116f46836d848baedd671e36b7f1, type: 3}
   m_Name: Disco.3
   m_EditorClassIdentifier: 
+  karaokeProfile: {fileID: 11400000, guid: daae78f6aaa9a3a4893f4e3cfa25e3ce, type: 2}
   text:
   - This sure is a confusing treasure, Fritz-man. I don't quite get the gist, but
     then again I never understood these paintings.
-  rate: 1
+  rate: 0.08
   charPerRate: 1

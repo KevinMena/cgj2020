@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class NPCHandler : MonoBehaviour
 {
-    
-    public void StartPatrol(List<Transform> waypoints) 
+    IActorNPC nPC;
+
+    void Awake() 
     {
-        
+        nPC = GetComponent<IActorNPC>();
+    }
+
+    public void StartPatrol() 
+    {
+        nPC.isMoving = !nPC.isMoving;
     }
 }
