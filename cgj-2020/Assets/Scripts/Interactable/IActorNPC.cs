@@ -39,6 +39,7 @@ public class IActorNPC : Interactable
     public override IEnumerator InteractWith() 
     {
         isMoving = false;
+        KaraokeController.Instance.IActorNPC = this;
         KaraokeController.Instance.PlayDialogues(dialoguesList);
         
         yield return null;

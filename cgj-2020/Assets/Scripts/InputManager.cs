@@ -31,6 +31,7 @@ public class InputManager : MonoBehaviour
                 {
                     KaraokeController.Instance.IActorNPC.SendGift(InventoryManager.Instance.GetCode(i));
                     GameManager.Instance.Inventory.RemoveItem(i);
+                    Debug.Log("i'M GiFtED");
                 }
             }
             else

@@ -25,6 +25,7 @@ public class HotbarController : Singleton<HotbarController>
             if (slots[i].isEmpty)
             {
                 slots[i].Item = item;
+                break;
             }
         }
     }
