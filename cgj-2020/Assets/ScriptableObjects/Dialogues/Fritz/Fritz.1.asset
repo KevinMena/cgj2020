@@ -9,11 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc5e2378dd8ce6e4d999caf4a5e34ba2, type: 3}
+  m_Script: {fileID: 11500000, guid: f475116f46836d848baedd671e36b7f1, type: 3}
   m_Name: Fritz.1
   m_EditorClassIdentifier: 
+  karaokeProfile: {fileID: 11400000, guid: 50efd07fb70e20345a4600da2adbd410, type: 2}
   text:
   - I am Reconstru-bot! I will repair my four broken friends with my sweet items,
     and I am not delusional!
-  rate: 0.5
-  charPerRate: 5
+  rate: 0.05
+  charPerRate: 1

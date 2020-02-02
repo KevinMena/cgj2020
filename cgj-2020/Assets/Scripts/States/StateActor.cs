@@ -12,5 +12,5 @@ public class StateActor
 
     public Dialogue stateDialogue;
 
-    UnityEvent stateEvent;
+    [SerializeField] UnityEvent stateEvent;
 }
