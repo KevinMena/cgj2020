@@ -7,7 +7,6 @@ using UnityEngine.EventSystems;
 public class Slot : MonoBehaviour
 {
     [SerializeField] Image sImage = null;
-    [SerializeField] Collider2D c = null;
     private Item myItem = null;
 
     public Item Item {
@@ -31,16 +30,6 @@ public class Slot : MonoBehaviour
         }
     }
 
-    public bool IsRaycasted()
-    {
-        //RaycastHit2D[] results;
-        
-        //if (EventSystem.current.IsPointerOverGameObject())
-            //return true;
-        //else
-            return false;            
-    }
-
     public bool isEmpty {
         get {
             return null == myItem;
@@ -53,6 +42,18 @@ public class Slot : MonoBehaviour
             return true;
 
         return false;
+    }
+
+    void OnMouseExit()
+    {
+        TooltipManager.Instance.Hide();
+        HotbarController.Instance.selected = null;
+    }
+
+    void OnMouseOver()
+    {
+        HotbarController.Instance.selected = transform.gameObject;
+        TooltipManager.Instance.Show(myItem);
     }
 
 } 
