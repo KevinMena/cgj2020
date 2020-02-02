@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 442afb8e21e8dbf4ebf45a128d50b88f, type: 3}
-  m_Name: KidProfile
+  m_Script: {fileID: 11500000, guid: f475116f46836d848baedd671e36b7f1, type: 3}
+  m_Name: Flower
   m_EditorClassIdentifier: 
-  portrait: {fileID: -1465132947172527280, guid: badb807108808ab4fa85b15f4d289d8f,
-    type: 3}
-  voice: {fileID: 8300000, guid: bbf1a467b7a9cbd4194a4e9cc542b349, type: 3}
+  karaokeProfile: {fileID: 11400000, guid: a323cd3d899ceba4e80df4bb50f41b60, type: 2}
+  text:
+  - Beautiful aftermath of watering a seed.
+  rate: 0.09
+  charPerRate: 5

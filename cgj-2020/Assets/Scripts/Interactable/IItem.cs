@@ -14,6 +14,7 @@ public class IItem : IBasic
         yield return new WaitWhile(()=>KaraokeController.Instance.IsTalking);
         Debug.Log("Adding to inventory");
         AddToInventory();
+        transform.gameObject.SetActive(false);
     }
 
     private void AddToInventory() {

@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   karaokeProfile: {fileID: 11400000, guid: ea0e17a56eb82aa448a83f72412df186, type: 2}
   text:
-  - Fritz, is that... is that fruit? Real fruit that can be made into a smoothie?
-    Also known as my entire purpose? You have allowed me to live my essence!
+  - Placeholder
   rate: 0.02
   charPerRate: 1

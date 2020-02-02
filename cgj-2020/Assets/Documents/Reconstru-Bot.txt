@@ -48,6 +48,9 @@ Los cuatro robots dañados son una Licuadora, una Aspiradora, un Tocadiscos, y u
 La Licuadora vive en medio de un bosque seco. Para llegar a ella, Fritz debe encontrar el Death Ray para abrirse paso entre los árboles. Lo que quiere es la lata de frutas
 
 LICUADORA
+(Cuando Fritz la encuentra)
+Hey, Fritz. To what do why owe your presence in the middle of my existential crisis?
+
 (Cuando recibe las frutas)
 Fritz, is that... is that fruit? Real fruit that can be made into a smoothie? Also known as my entire purpose? You have allowed me to live my essence!
 
@@ -57,6 +60,9 @@ Fritz, I do not understand why you gave me this. But I will blend it heartlessly
 La Aspiradora vive en un cementerio. Su bolsa está llena de tierra. Para llegar a ella, Fritz debe seguir a un robot fantasma, que va y vuelve del cementerio. Lo que quiere es el cuchillo o la pala
 
 ASPIRADORA
+(Cuando Fritz la encuentra)
+Oh, hi, Fritz! You're finding me a little bit stuck, haha!
+
 (cuando recibe el cuchillo)
 I guess I worked too hard, right Fritz? Haha. You're right, I'll cut my bag open. I hate this job anyways.
 
@@ -69,6 +75,9 @@ Haha, I get it! It's a prank gift! The prank is I suck dirt until I die! Haha!
 El Tocadiscos vive en un museo destruido, con pinturas de flores. Para llegar a él, Fritz sólo debe ir al museo, que está bastante visible en el pueblo. Lo que El Tocadiscos quiere es la flor: Se obtiene encontrando la Water Gun y usándola para regar la semilla
 
 TOCADISCOS
+(cuando Fritz lo encuentra)
+Hey there, cool Fritz. Say, do you think flowers are real?
+
 (cuando recibe la flor)
 Why, do my eyes tell lies or is this ritzy thing a real flower? I thought it was made up! You have shown me a miracle, Fritz the fridge-man!
 
@@ -81,11 +90,14 @@ This sure is a confusing treasure, Fritz-man. I don't quite get the gist, but th
 La Tostadora vive en la alcantarilla, sumergida en agua. Para llegar a ella, debes descubrir la alcantarilla en el pueblo, y bajar por ella. Lo que quiere es la esponja
 
 TOSTADORA
+(Cuando Fritz la encuentra)
+Thank you for visiting my electric death trap, Fritz. It's sad and dangerous, the life of a wet toaster
+
 (Cuando recibe la esponja)
 This soft thing, it can dry me! I don't have to die! I don't have to kill! Fritz, you care about me!
 
 (Cuando no recibe la esponja)
-Thank you for visiting my electric death trap, Fritz. And thank you for giving me this. I guess I could try to use it as a...
+Oh, Fritz, thank you for giving me this. I guess I could try to use it as a...
 (La Tostadora explota)
 
 A todo lo que dicen los personajes, Fritz responde "I am Reconstru-Bot!"

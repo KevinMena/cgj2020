@@ -6,7 +6,9 @@ public class Inventory : MonoBehaviour
 {
     [SerializeField] protected List<Item> inventoryList = new List<Item>();
 
-    [SerializeField] Item module;
+    [SerializeField] Item module1;
+
+    [SerializeField] Item module2;
 
     [SerializeField] const int NUMBER_SLOTS = 6;
 

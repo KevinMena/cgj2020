@@ -13,4 +13,10 @@ public class StateActor
     public Dialogue stateDialogue;
 
     [SerializeField] UnityEvent stateEvent;
+
+    public UnityEvent StateEvent {
+        get {
+            return stateEvent;
+        }
+    }
 }

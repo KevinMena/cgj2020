@@ -40,6 +40,7 @@ public class IActorNPC : Interactable
     {
         isMoving = false;
         KaraokeController.Instance.PlayDialogues(dialoguesList);
+        
         yield return null;
     }
 
@@ -55,6 +56,8 @@ public class IActorNPC : Interactable
                 if(posibleStates[i].itemList[j] == gift) 
                 {
                     currentState = posibleStates[i];
+                    currentState.StateEvent.Invoke();
+                    GameManager.Instance.UpdateState(this.transform.gameObject, currentState.stateCode);
                     return;
                 }
             }
