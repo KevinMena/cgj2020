@@ -6,6 +6,8 @@ public class HotbarController : Singleton<HotbarController>
 {
     [SerializeField] Slot[] slots = null;
 
+    public GameObject selected= null;
+
     public Slot[] Slots {
         get {
             return slots;
