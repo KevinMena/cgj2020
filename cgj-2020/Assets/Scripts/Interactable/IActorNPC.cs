@@ -57,19 +57,28 @@ public class IActorNPC : Interactable
                 if(posibleStates[i].itemList[j] == gift) 
                 {
                     currentState = posibleStates[i];
-                    currentState.StateEvent.Invoke();
-                    GameManager.Instance.UpdateState(this.transform.gameObject, currentState.stateCode);
+                    KaraokeController.Instance.PlayDialogues(currentState.stateDialogue);
+                    StartCoroutine(WaitForDialogue());
                     return;
                 }
             }
         }
     }
 
+    private IEnumerator WaitForDialogue() {
+        yield return new WaitWhile(()=> KaraokeController.Instance.IsTalking);
+        currentState.StateEvent.Invoke();
+        GameManager.Instance.UpdateState(this, currentState.stateCode);
+    }
+
     public void Patrolling()
     {
-        transform.Translate(currentWaypoint.position * npcSpeed * Time.deltaTime, Space.World);
+        Vector3 direction = currentWaypoint.position - this.transform.position;
+        direction = direction.normalized;
+        transform.Translate(direction * npcSpeed * Time.deltaTime, Space.World);
 
-        if(transform.position.Equals(currentWaypoint.position))
+        float distance = Vector3.Distance(this.transform.position, currentWaypoint.position);
+        if(distance < 0.1f)
         {
             waypoints.Enqueue(currentWaypoint);
             currentWaypoint = waypoints.Dequeue();

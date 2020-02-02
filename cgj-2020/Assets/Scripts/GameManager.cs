@@ -4,7 +4,7 @@ using System;
 
 public class GameManager : Singleton <GameManager>
 {
-    public GameObject[] actors;
+    public IActorNPC[] actors;
     [SerializeField] Inventory inventory = null;
     [SerializeField] int[] states = null;
 
@@ -22,12 +22,13 @@ public class GameManager : Singleton <GameManager>
         }
     }
 
-    public void UpdateState(GameObject actorToUpdate, int newState)
+    public void UpdateState(IActorNPC actorToUpdate, int newState)
     {
         for(int i = 0; i < actors.Length; i++)
         {
-            if(actors.Equals(actorToUpdate))
+            if(actors[i].Equals(actorToUpdate))
             {
+                Debug.Log("Change state");
                 states[i] = newState;
                 break;
             }

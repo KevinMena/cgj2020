@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class Slot : MonoBehaviour
 {
     [SerializeField] Image sImage = null;
-    [SerializeField] Collider c = null;
+    [SerializeField] Collider2D c = null;
     private Item myItem = null;
 
     public Item Item {
@@ -32,11 +33,11 @@ public class Slot : MonoBehaviour
 
     public bool IsRaycasted()
     {
-        RaycastHit2D results;
+        //RaycastHit2D[] results;
         
-        if (c.Raycast(c.transform.position - Input.mousePosition, results, 100))
-            return true;
-        else
+        //if (EventSystem.current.IsPointerOverGameObject())
+            //return true;
+        //else
             return false;            
     }
 

@@ -543,9 +543,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a0e87e390c8ed146aceaf488657b18d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actors: []
-  inventory: {fileID: 0}
-  states: 
+  actors:
+  - {fileID: 635219991}
+  - {fileID: 2065543635}
+  - {fileID: 2034972653}
+  - {fileID: 718195336}
+  - {fileID: 1443867885}
+  inventory: {fileID: 1711333142}
+  states: 0000000000000000000000000000000000000000
 --- !u!4 &280621896
 Transform:
   m_ObjectHideFlags: 0
@@ -755,6 +760,13 @@ MonoBehaviour:
     stateDialogue: {fileID: 11400000, guid: 8d47917646dc6a049a9422c6f18ee6b9, type: 2}
     stateEvent:
       m_PersistentCalls:
+        m_Calls: []
+  posibleStates:
+  - stateCode: 1
+    itemList: 09000000
+    stateDialogue: {fileID: 11400000, guid: 40537798321c30d48b5bff5b91f103a1, type: 2}
+    stateEvent:
+      m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 635219994}
           m_MethodName: StartPatrol
@@ -767,18 +779,11 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  posibleStates:
-  - stateCode: 1
-    itemList: 09000000
-    stateDialogue: {fileID: 11400000, guid: 40537798321c30d48b5bff5b91f103a1, type: 2}
-    stateEvent:
-      m_PersistentCalls:
-        m_Calls: []
   isMoving: 0
   waypointsArray:
   - {fileID: 973895208}
   - {fileID: 1017933770}
-  npcSpeed: 1
+  npcSpeed: 3
 --- !u!212 &635219992
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -101388,6 +101393,7 @@ GameObject:
   - component: {fileID: 1443867885}
   - component: {fileID: 1443867884}
   - component: {fileID: 1443867883}
+  - component: {fileID: 1443867888}
   m_Layer: 0
   m_Name: Blender
   m_TagString: Untagged
@@ -101539,6 +101545,25 @@ Transform:
   m_Father: {fileID: 331531092}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1443867888
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443867882}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 342deac8ce646334bad8fde812b0e4e0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1462081230
 GameObject:
   m_ObjectHideFlags: 0
@@ -104061,7 +104086,18 @@ MonoBehaviour:
     stateDialogue: {fileID: 11400000, guid: 32541a94f85d7cd4396e191fc4cb8817, type: 2}
     stateEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 2065543634}
+          m_MethodName: Explode
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - stateCode: 2
     itemList: 01000000
     stateDialogue: {fileID: 11400000, guid: 51727ce85cff4d14496de7f397f287c3, type: 2}
