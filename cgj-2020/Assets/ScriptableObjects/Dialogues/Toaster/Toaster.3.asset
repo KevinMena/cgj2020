@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f475116f46836d848baedd671e36b7f1, type: 3}
-  m_Name: Blender.2
+  m_Name: Toaster.3
   m_EditorClassIdentifier: 
-  karaokeProfile: {fileID: 11400000, guid: ea0e17a56eb82aa448a83f72412df186, type: 2}
+  karaokeProfile: {fileID: 11400000, guid: a4bdbd5fb169c0f419f1422b32972068, type: 2}
   text:
-  - Fritz, is that... is that fruit? Real fruit that can be made into a smoothie?
-    Also known as my entire purpose? You have allowed me to live my essence!
-  rate: 0.02
+  - This soft thing, it can dry me! I don't have to die! I don't have to kill! Fritz,
+    you care about me!
+  rate: 0.04
   charPerRate: 1
