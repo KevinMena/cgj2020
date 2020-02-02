@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40b94c5825a9b8b449670db117370373, type: 3}
-  m_Name: Rock
+  m_Script: {fileID: 11500000, guid: f475116f46836d848baedd671e36b7f1, type: 3}
+  m_Name: DeathRay
   m_EditorClassIdentifier: 
-  itemName: Rock
-  itemDescription: The kind of thing a dumb kid would like.
-  itemImage: {fileID: -1652251246172475402, guid: 92909b85172f14e4caefe203b3b804f7,
-    type: 3}
+  karaokeProfile: {fileID: 11400000, guid: a323cd3d899ceba4e80df4bb50f41b60, type: 2}
+  text:
+  - Weapon that dissipates obstructions.
+  rate: 0.09
+  charPerRate: 5
