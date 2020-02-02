@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Slot : MonoBehaviour
 {
     [SerializeField] Image sImage = null;
+    [SerializeField] Collider c = null;
     private Item myItem = null;
 
     public Item Item {
@@ -31,7 +32,9 @@ public class Slot : MonoBehaviour
 
     public bool IsRaycasted()
     {
-        if (sImage.Raycast(Input.mousePosition, Camera.main))
+        RaycastHit2D results;
+        
+        if (c.Raycast(c.transform.position - Input.mousePosition, results, 100))
             return true;
         else
             return false;            
