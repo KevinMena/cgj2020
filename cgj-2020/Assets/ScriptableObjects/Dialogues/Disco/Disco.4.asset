@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f475116f46836d848baedd671e36b7f1, type: 3}
-  m_Name: Blender.1
+  m_Name: Disco.4
   m_EditorClassIdentifier: 
-  karaokeProfile: {fileID: 11400000, guid: ea0e17a56eb82aa448a83f72412df186, type: 2}
+  karaokeProfile: {fileID: 11400000, guid: daae78f6aaa9a3a4893f4e3cfa25e3ce, type: 2}
   text:
-  - Hey, Fritz. To what do why owe your presence in the middle of my existential
-    crisis?
-  rate: 0.02
+  - This sure is a confusing treasure, Fritz-man. I don't quite get the gist, but
+    then again I never understood these paintings.
+  rate: 0.08
   charPerRate: 1

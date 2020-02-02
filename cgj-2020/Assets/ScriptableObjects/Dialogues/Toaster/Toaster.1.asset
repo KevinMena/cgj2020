@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   karaokeProfile: {fileID: 11400000, guid: a4bdbd5fb169c0f419f1422b32972068, type: 2}
   text:
-  - Placeholder
+  - Thank you for visiting my electric death trap, Fritz. It's sad and dangerous,
+    the life of a wet toaster
   rate: 0.04
   charPerRate: 1

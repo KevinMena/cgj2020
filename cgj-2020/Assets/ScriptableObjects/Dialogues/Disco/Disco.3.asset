@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f475116f46836d848baedd671e36b7f1, type: 3}
   m_Name: Disco.3
   m_EditorClassIdentifier: 
-  karaokeProfile: {fileID: 11400000, guid: daae78f6aaa9a3a4893f4e3cfa25e3ce, type: 2}
+  karaokeProfile: {fileID: 11400000, guid: 58314ed22a3c4a546a5b4c0b98a4a577, type: 2}
   text:
-  - This sure is a confusing treasure, Fritz-man. I don't quite get the gist, but
-    then again I never understood these paintings.
+  - It's a swell thing, this strange pebble. I have the oddest idea that this is
+    somehow related to flowers. If they weren't ficticious, that is!
   rate: 0.08
   charPerRate: 1

@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   karaokeProfile: {fileID: 11400000, guid: 58314ed22a3c4a546a5b4c0b98a4a577, type: 2}
   text:
-  - Why, do my eyes tell lies or is this ritzy thing a real flower? I thought it
-    was made up! You have shown me a miracle, Fritz the fridge-man!
+  - Hey there, cool Fritz. Say, do you think flowers are real?
   rate: 0.08
   charPerRate: 1

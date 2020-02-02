@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f475116f46836d848baedd671e36b7f1, type: 3}
   m_Name: VC.3
   m_EditorClassIdentifier: 
-  karaokeProfile: {fileID: 11400000, guid: 844a0bcb7e3bfc547b7d024bc05c6502, type: 2}
+  karaokeProfile: {fileID: 11400000, guid: f386aac95fa2bcf49bd86261d9ec42ca, type: 2}
   text:
-  - Haha, I get it! It's a prank gift! The prank is I suck dirt until I die! Haha!
+  - Good thinking, Fritz! Haha, I'll literally dig myself out of an early grave!
   rate: 0.06
   charPerRate: 1

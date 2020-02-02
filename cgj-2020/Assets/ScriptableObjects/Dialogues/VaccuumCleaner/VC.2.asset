@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   karaokeProfile: {fileID: 11400000, guid: f386aac95fa2bcf49bd86261d9ec42ca, type: 2}
   text:
-  - Good thinking, Fritz! Haha, I'll literally dig myself out of an early grave!
+  - I guess I worked too hard, right Fritz? Haha. You're right, I'll cut my bag open.
+    I hate this job anyways.
   rate: 0.06
   charPerRate: 1
