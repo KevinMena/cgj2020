@@ -19,8 +19,9 @@ public class TooltipManager : MonoBehaviour
         bool showing = false;
         for (int i = 0; i <  HotbarController.Instance.nSlots; i++)
         {
-            if (HotbarController.Instance.Slots[i].IsRaycasted())
+            if (!HotbarController.Instance.Slots[i].isEmpty && HotbarController.Instance.Slots[i].IsRaycasted())
             {
+                transform.position = Input.mousePosition;
                 SetTooltip(HotbarController.Instance.Slots[i].Item);
                 showing = true;
             }    

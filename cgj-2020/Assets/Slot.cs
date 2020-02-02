@@ -17,9 +17,15 @@ public class Slot : MonoBehaviour
             myItem = value;
             
             if (value != null)
+            {
                 sImage.sprite = Item.itemImage;
+                sImage.enabled = true;
+            }
             else
+            {
                 sImage.sprite = null;
+                sImage.enabled = false;
+            }
         }
     }
 
