@@ -23,6 +23,7 @@ public class Inventory : MonoBehaviour
         if(inventoryList.Count < NUMBER_SLOTS) 
         {
             inventoryList.Add(itemToAdd);
+            HotbarController.Instance.AddItem(itemToAdd);
             return;
         } 
         else

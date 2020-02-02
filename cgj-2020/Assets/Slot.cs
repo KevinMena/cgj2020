@@ -15,8 +15,20 @@ public class Slot : MonoBehaviour
 
         set {
             myItem = value;
-            sImage.sprite = Item.itemImage;
+            
+            if (value != null)
+                sImage.sprite = Item.itemImage;
+            else
+                sImage.sprite = null;
         }
+    }
+
+    public bool IsRaycasted()
+    {
+        if (sImage.Raycast(Input.mousePosition, Camera.main))
+            return true;
+        else
+            return false;            
     }
 
     public bool isEmpty {
@@ -32,4 +44,5 @@ public class Slot : MonoBehaviour
 
         return false;
     }
+
 } 

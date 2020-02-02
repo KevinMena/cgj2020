@@ -6,12 +6,58 @@ public class HotbarController : Singleton<HotbarController>
 {
     [SerializeField] Slot[] slots = null;
 
-
-
     public Slot[] Slots {
         get {
             return slots;
         }
+    }
+
+    public int nSlots {
+        get {
+            return slots.Length;
+        }
+    }
+
+    public void AddItem(Item item)
+    {
+        for (int i = 0; i < length; i++)
+        {
+            if (slots[i].isEmpty)
+            {
+                slots[i].AddItem(item);
+            }
+        }
+    }
+
+    public void RemoveItem(Item item)
+    {
+        if (item == null)
+            return;
+
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (slots[i].Item == item)
+            {
+                slots[i].Item = null;
+                break;
+            }
+        }
+
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (slots[i].isEmpty)
+            {
+                for (int j = i+1; j < slots.Length; j++)
+                {
+                     if (!slots[j].isEmpty)
+                    {      
+                        slots[i].Item = slots[j].Item;
+                        slots[j].Item = null;
+                    }             
+                }
+            }
+        }
+        
     }
 
     public Item IsItemSelected()
@@ -29,6 +75,4 @@ public class HotbarController : Singleton<HotbarController>
 
         return null;
     }
-
-
 }

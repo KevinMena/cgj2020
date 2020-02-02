@@ -22,7 +22,10 @@ public class InputManager : MonoBehaviour
                 if (i == null)
                     KaraokeController.Instance.SendInterruption();
                 else
+                {
                     KaraokeController.Instance.IActorNPC.SendGift(InventoryManager.Instance.GetCode(i));
+                    HotbarController.Instance.RemoveItem(i);
+                }
             }
             else
             {   
