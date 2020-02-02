@@ -27,7 +27,8 @@ public class KaraokeController : Singleton<KaraokeController>
 
     private KaraokeProfile lastKaraokeProfile = null;
 
-    private IActorNPC talkinINPC = null; 
+    private IActorNPC talkinNPC = null; 
+    private bool isMoving = false;
 
     public bool IsTalking {
         get {
@@ -35,9 +36,15 @@ public class KaraokeController : Singleton<KaraokeController>
         }
     }
 
+    public bool IsMoving {
+        set {
+            isMoving = value;
+        }
+    }
+
     public IActorNPC IActorNPC {
         set {
-            talkinINPC = value;
+            talkinNPC = value;
         }
     }
 
@@ -107,9 +114,6 @@ public class KaraokeController : Singleton<KaraokeController>
             }
 
             skip = false;
-
-            yield return new WaitUntil(()=>isDone);
-            
             isDone = true;
         }
     } 
@@ -118,6 +122,11 @@ public class KaraokeController : Singleton<KaraokeController>
     {
         isTalking = false;
         lastKaraokeProfile = null;
+
+        if (isMoving)
+            talkinNPC.isMoving = true;
+
+        isMoving = false;
         animator.SetTrigger("HidePortrait");
         animator.SetTrigger("Hide");
 

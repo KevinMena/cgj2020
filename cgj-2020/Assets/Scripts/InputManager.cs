@@ -22,7 +22,6 @@ public class InputManager : MonoBehaviour
                 Debug.Log("Sniffing");
                 sniffer.Sniff();
             }
-
         }
 
         // AXIS STUFF
