@@ -1,8 +1,8 @@
 - Visuales:
 
  + Mapa
-  Atlas
-  Terreno Tierra
+X  Atlas
+X  Terreno Tierra
   //Terreno Chatarra 1
   //Terreno Chatarra 2
   Terreno Bosque
@@ -22,14 +22,14 @@ X  Tostadora (normal, explota)
 X  Licuadora
 X  Tocadiscos
 X  Aspiradora
-  Niño Cafetera: frente, atrás, izquierda, derecha
-  Robot fantasma: frente, atrás, izquierda, derecha
+X  Niño Cafetera: frente, atrás, izquierda, derecha
+X  Robot fantasma: frente, atrás, izquierda, derecha
   NPC 1
   NPC 2
   NPC 3
 
  + Escenario
-  Tren de Fritz
+X  Tren de Fritz
 X  Árboles secos
   Tumbas de robots
   Museo destruido
@@ -40,18 +40,18 @@ X  Árboles secos
   Flare
 
  + Gadgets
-  Death Ray
-  Water Gun
+X  Death Ray
+X  Water Gun
 
  + Items
-  Semilla
-  Flor
-  Lata de frutas
-  Cuchillo
-  Pala
-  Esponja
-  Bobina de Tesla
-  Piedra
+X  Semilla
+X  Flor
+X  Lata de frutas
+X  Cuchillo
+X  Pala
+X  Esponja
+X  Bobina de Tesla
+X  Piedra
 
  + Escenas
   Fritz dentro del tren al principio
