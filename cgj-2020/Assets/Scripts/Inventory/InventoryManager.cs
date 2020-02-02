@@ -22,4 +22,15 @@ public class InventoryManager : Singleton<InventoryManager>
     {
         return database[requestedItem];
     }
+
+    public int GetCode(Item item)
+    {
+        for (int i = 0; i < database.Count; i++)
+        {
+            if (database[i] == item)
+                return i;
+        }
+
+        return -1;
+    }
 }
