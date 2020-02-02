@@ -6,10 +6,10 @@
   //Terreno Chatarra 1
   //Terreno Chatarra 2
   Terreno Bosque
-  Terreno Pueblo
-  Terreno Carretera
+X  Terreno Grama
+X  Terreno Carretera
   Terreno Agua
-  Terreno Acera
+X  Terreno Acera
   Cliff Pared de Alcantarilla
   Cliff Bosque
   Cliff de Roca
