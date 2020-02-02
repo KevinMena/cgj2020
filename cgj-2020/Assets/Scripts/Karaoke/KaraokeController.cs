@@ -54,7 +54,7 @@ public class KaraokeController : Singleton<KaraokeController>
         StartCoroutine(ExecuteDialog());
     }
 
-    private void SetProfile(KaraokeProfile kp)
+    private void SetPortrait(KaraokeProfile kp)
     {
         if (kp != lastKaraokeProfile)
         {
@@ -73,7 +73,7 @@ public class KaraokeController : Singleton<KaraokeController>
             kText.maxVisibleCharacters = 0;    
             
             AudioClip voice = cDialogues[i].KaraokeProfile.Voice;
-            SetProfile(cDialogues[i].KaraokeProfile);
+            SetPortrait(cDialogues[i].KaraokeProfile);
             int j = 0;
             isDone = false;
             kAudioS.PlayOneShot(cDialogues[i].KaraokeProfile.Voice);
