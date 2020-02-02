@@ -18,11 +18,11 @@
 X  Atlas
 X  Fritz: con Death Ray, con Water Gun
          frente, atrás, izquierda, derecha
-  Niño Cafetera
 X  Tostadora (normal, explota)
 X  Licuadora
 X  Tocadiscos
 X  Aspiradora
+  Niño Cafetera: frente, atrás, izquierda, derecha
   Robot fantasma: frente, atrás, izquierda, derecha
   NPC 1
   NPC 2
