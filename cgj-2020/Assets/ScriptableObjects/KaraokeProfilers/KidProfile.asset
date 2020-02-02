@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 442afb8e21e8dbf4ebf45a128d50b88f, type: 3}
   m_Name: KidProfile
   m_EditorClassIdentifier: 
-  portrait: {fileID: -1699923271235865474, guid: badb807108808ab4fa85b15f4d289d8f,
+  portrait: {fileID: -1465132947172527280, guid: badb807108808ab4fa85b15f4d289d8f,
     type: 3}
   voice: {fileID: 8300000, guid: bbf1a467b7a9cbd4194a4e9cc542b349, type: 3}
