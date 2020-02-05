@@ -38,6 +38,9 @@ TextureImporter:
   - first:
       213: -1465132947172527280
     second: Atlas Portraits_0
+  - first:
+      213: -3492124392919771011
+    second: Atlas Portraits_11
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -310,7 +313,7 @@ TextureImporter:
         width: 384
         height: 384
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -318,6 +321,90 @@ TextureImporter:
       bones: []
       spriteID: 0537f0fd85dcaabe0800000000000000
       internalID: -1465132947172527280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas Portraits_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1024
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70fd8e1bf17cb6520800000000000000
+      internalID: 2696467740854116103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas Portraits_9
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 1025
+        width: 384
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e930dc6b24dab5290800000000000000
+      internalID: -7900530619245067362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas Portraits_10
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 1024
+        width: 382
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5589907d6501a28f0800000000000000
+      internalID: -564620838120613803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas Portraits_11
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 1025
+        width: 383
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d785a80ed5b798fc0800000000000000
+      internalID: -3492124392919771011
       vertices: []
       indices: 
       edges: []

@@ -46,20 +46,7 @@ public class HotbarController : Singleton<HotbarController>
             }
         }
 
-        for (int i = 0; i < slots.Length; i++)
-        {
-            if (slots[i].isEmpty)
-            {
-                for (int j = i+1; j < slots.Length; j++)
-                {
-                     if (!slots[j].isEmpty)
-                    {      
-                        slots[i].Item = slots[j].Item;
-                        slots[j].Item = null;
-                    }             
-                }
-            }
-        }
+        
         
     }
 

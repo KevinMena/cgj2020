@@ -52,9 +52,13 @@ public class Slot : MonoBehaviour
 
     void OnMouseEnter()
     {
+
+        if (this.isEmpty)
+            return;
+
+        
         HotbarController.Instance.selected = this;
         TooltipManager.Instance.Show(myItem);
-        Debug.Log(HotbarController.Instance.selected.Item);
     }
 
 } 

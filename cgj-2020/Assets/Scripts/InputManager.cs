@@ -19,6 +19,11 @@ public class InputManager : MonoBehaviour
 
         // EF STUFF
 
+        if (Input.GetButtonDown("Cancel"))
+        {
+            Application.Quit();
+        }
+
         if (Input.GetButtonDown("Fire1"))
         {
             if (KaraokeController.Instance.IsTalking)
@@ -33,8 +38,9 @@ public class InputManager : MonoBehaviour
                     KaraokeController.Instance.SendInterruption();
                 else
                 {
-                    KaraokeController.Instance.IActorNPC.SendGift(InventoryManager.Instance.GetCode(i));
-                    GameManager.Instance.Inventory.RemoveItem(i);
+                    if (KaraokeController.Instance.IActorNPC.SendGift(InventoryManager.Instance.GetCode(i)))       
+                        GameManager.Instance.Inventory.RemoveItem(i);
+
                     Debug.Log("i'M GiFtED");
                 }
             }

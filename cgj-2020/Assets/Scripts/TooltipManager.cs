@@ -12,18 +12,18 @@ public class TooltipManager : Singleton<TooltipManager>
 
     public void Show(Item i)
     {
-        if (!isOn)
+        if (isOn)
             return;
 
         isOn = true;
         text.text = i.itemDescription;
-        animator.SetTrigger("Show");
+        animator.SetBool("Show", true);
     } 
 
     public void Hide()
     {
         isOn = false;
-        animator.SetTrigger("Hide");
+        animator.SetBool("Show", false);
     }
 
     void Update()

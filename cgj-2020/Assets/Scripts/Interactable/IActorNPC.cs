@@ -47,16 +47,25 @@ public class IActorNPC : Interactable
     {
         isMoving = false;
         KaraokeController.Instance.IActorNPC = this;
-        KaraokeController.Instance.PlayDialogues(dialoguesList);
+
+        if (currentState.stateCode != 0)
+        {
+            KaraokeController.Instance.PlayDialogues(posibleStates[currentState.stateCode - 1].stateDialogue);
+        }
+        else
+        {
+            KaraokeController.Instance.PlayDialogues(dialoguesList);
+        }
         
         yield return null;
     }
 
-    public void SendGift(int gift) {
+    public bool SendGift(int gift) {
+
         if (currentState.stateCode != 0)
         {
             Debug.Log("You already gifted something to this NPC");
-            return;
+            return false;
         }
 
         for(int i = 0; i < posibleStates.Count; i++) {
@@ -66,10 +75,12 @@ public class IActorNPC : Interactable
                     currentState = posibleStates[i];
                     KaraokeController.Instance.PlayDialogues(currentState.stateDialogue);
                     StartCoroutine(WaitForDialogue());
-                    return;
+                    return true;
                 }
             }
         }
+
+        return false;
     }
 
     private IEnumerator WaitForDialogue() {

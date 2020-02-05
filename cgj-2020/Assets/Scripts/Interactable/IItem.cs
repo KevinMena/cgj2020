@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+
 
 public class IItem : IBasic
 {
     public int itemCode;
 
     public Item itemAttach;
+
+    public UnityEvent after;
 
     public override IEnumerator InteractWith()
     {
@@ -22,6 +26,8 @@ public class IItem : IBasic
         {
             GameManager.Instance.ExecuteDialogue();
         }
+
+        after.Invoke();
     }
 
     private void AddToInventory() {

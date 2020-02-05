@@ -27,6 +27,8 @@ public class KaraokeController : Singleton<KaraokeController>
 
     private KaraokeProfile lastKaraokeProfile = null;
 
+    private bool showKaraoke = true;
+
     private IActorNPC talkinNPC = null; 
     private bool isMoving = false;
 
@@ -59,9 +61,13 @@ public class KaraokeController : Singleton<KaraokeController>
 
     public void PlayDialogues(Dialogue[] msgs)
     {
+        if (isTalking)
+            showKaraoke = false;
+
+
         isTalking = true;
         cDialogues = msgs;
-        animator.SetTrigger("Show");
+
         StartCoroutine(ExecuteDialog());
     }
 
@@ -69,11 +75,12 @@ public class KaraokeController : Singleton<KaraokeController>
     {
         if (kp != lastKaraokeProfile)
         {   
-            if (kp != null)
+            if (lastKaraokeProfile != null)
             {
                 animator.SetTrigger("HidePortrait");
                 yield return new WaitForSeconds(.5f);
             }
+            lastKaraokeProfile = kp;
             kPortrait.sprite = kp.Portrait;
             animator.SetTrigger("ShowPortrait");
         }
@@ -89,7 +96,12 @@ public class KaraokeController : Singleton<KaraokeController>
             kText.maxVisibleCharacters = 0;    
             
             AudioClip voice = cDialogues[i].KaraokeProfile.Voice;
-            StartCoroutine(SetPortrait(cDialogues[i].KaraokeProfile));
+            if (showKaraoke)
+                animator.SetTrigger("Show");
+            yield return new WaitForSeconds(.25f);
+            yield return StartCoroutine(SetPortrait(cDialogues[i].KaraokeProfile));
+            yield return new WaitForSeconds(.5f);
+
             int j = 0;
             isDone = false;
             kAudioS.PlayOneShot(cDialogues[i].KaraokeProfile.Voice);
@@ -132,6 +144,7 @@ public class KaraokeController : Singleton<KaraokeController>
             talkinNPC.isMoving = true;
 
 
+        showKaraoke = true;
         talkinNPC = null;
         isMoving = false;
         animator.SetTrigger("HidePortrait");
